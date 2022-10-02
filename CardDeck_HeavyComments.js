@@ -178,11 +178,16 @@ for(var i = 0; i<POSSIBLE_SUITS.length; i=i+1){
                         EXAMPLE[1] -> 'tim cook'
                     .
 
-                    So in our code, when we have POSSIBLE_VALUES[ii] we grab the 1 out of the 13
-                    avaliable values depending on which interation of the second loop we are on.
+                    So in our code, when we have POSSIBLE_VALUES[ii] we grab 1 out of the 13
+                    avaliable values from the POSSIBLE_VALUES array. We use the index of ii
+                    to grab the index 0 the first loop, index 1 the second loop, so on
+                    and so forth
 
-                    In POSSIBLE_VALUES[i] we grab the 1 out of the 4
-                    avaliable suits depending on which interation of the first loop we are on.
+                    In POSSIBLE_SUITS[i] we grab the 1 out of the 4
+                    avaliable suits. This time using i, instead of ii to choose our index.
+
+                    ii is iterated everytime the inside loop runs
+                    i is interated everytime the outside loop runs
 
                 2) Object instances
                     An instace of an object is a unquie peice of complex data that can be changed
